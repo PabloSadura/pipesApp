@@ -1,1 +1,29 @@
-<p>ordenar works!</p>
+<div>
+  <h1>Pipes Personalizados</h1>
+  <p>Pipes creados por {{ "nosotros" | mayusculas : enMayuscula }}</p>
+</div>
+
+<p-toolbar>
+  <div class="p-toolbar-group-letdFileSelect multiple"></div>
+  <div class="p-toolbar-group-right">
+    <button
+      pButton
+      label="Toggle Mayusculas"
+      class="mr-1"
+      (click)="cambiarMayusculas()"
+    ></button>
+    <button pButton icon="pi pi-sort" label="Por Nombre" class="mr-1"></button>
+    <button
+      pButton
+      icon="pi pi-sort"
+      label="Por Valor"
+      class="mr-1 p-button-success"
+    ></button>
+    <button
+      pButton
+      icon="pi pi-sort"
+      label="Por Color"
+      class="mr-1 p-button-help"
+    ></button>
+  </div>
+</p-toolbar>
